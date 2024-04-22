@@ -16,10 +16,17 @@ header{
     z-index: 3;
 }
 
-#logo{
-    font-size: 60px;
+.logo{
+    width: 87px;
     margin: 20px;
     color: white;
+}
+
+#menu-icon{
+    font-size: 40px;
+    margin: 30px;
+    color: white;
+    display: none;
 }
 
 header>nav>a{
@@ -77,17 +84,19 @@ article{
 article>img{
     width: 600px;
     border-radius: 5px;
+    margin: 16px;
 }
 
 article>h1>{
    display: flex;
    flex-direction: column;
+   margin: 16px;
 }
 
 article>h1>p{
     width: 600px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .title-box{
@@ -101,15 +110,56 @@ article>h1>p{
     display: flex;
     align-items: center;
     justify-content: center;   
-    height:400px;
+    height:480px;
 }
 
 .containers{
-    width: 200px;
-    height: 270px;
-    background-color: bisque;
+    width: 300px;
+    height: 370px;
+    background-image:url(../img/img_test.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     border-radius:6px;
     margin: 30px;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.containers:after{
+    content: "";
+    width: 278px;
+    height: 370px;
+    border-radius: 6px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.349);
+    z-index: 2;
+}
+
+.containers>i{
+    z-index: 3;
+    font-size: 40px;
+    margin: 12px;
+}
+
+.containers>h1{
+    z-index: 3;
+    font-size: 33px;
+    margin-left: 9px;
+
+}
+
+.containers>h1>p{
+    z-index: 3;
+   
+    margin-bottom: 9px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 footer{
@@ -156,3 +206,33 @@ li{
     text-align: center;
 }
 
+@media (max-width:1450px) and (min-width:1110px){
+}
+
+@media (max-width:1100px) and (min-width:500px){
+    #menu-icon{
+        display: inline;
+    }
+    header>nav>a{
+        display: none;
+    }
+    header>nav>button{
+        display: none;
+    }
+    article{
+        height: 800px;
+        flex-wrap: wrap;
+    }
+    article>img{
+        width: 400px;
+    }
+
+    .box{
+        height: 1400px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:880px) and (min-width:500px){
+   
+}
