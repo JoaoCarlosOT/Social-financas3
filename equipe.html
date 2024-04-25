@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resulte</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link type="text/css" rel="stylesheet" href="css/equipe.css">
+    <link rel="shortcut icon" href="img/logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="Js/home.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body class="body">
+    <script>
+        AOS.init();
+    </script>
+    <header>
+        <h1 data-aos="fade-right">
+            <img src="img/logo2.PNG" alt="" class="logo">Resulte
+        </h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Contabilidade</a>
+            <a href="#">Legislação</a>
+            <a href="#">Economia</a>
+            <a href="#">Matemática Financeira</a>
+            <a href="equipe.html">Equipe</a>
+            <button class="button" data-aos="fade-up" data-aos-anchor-placement="center-bottom" onclick="mudarTemaEscuroEquipe()">
+                <i class="fa-regular fa-moon" id="icon-moon"></i>
+                <i class="fa-solid fa-circle" id="icon-sun"></i>
+            </button>
+    
+            <i class="fa-solid fa-bars" id="menu-icon" onclick="abrirMenu()"></i>
+        </nav>
+    </header>
+    <div class="element-1">
+        <div class="container-class"></div>
+        <div class="parallax-box">
+            <div class="parallax-shadow"></div>
+            <div class="parallax-content">
+                <p class="titleparallax">FINANÇAS</p>
+                <p class="titleparallax">2022-2024</p>
+            </div>
+        </div>
+    </div>
+    <div class="element-2">
+        <div class="team1">
+            <div class="team1-boxtext">
+                <p class="team-text">EQUIPE</p>
+                <p class="area-text">Contabilidade</p>
+            </div>
+            <div class="team1-grid-students">
+                <div class="team1-student1 grid"></div>
+                <div class="team1-student2 grid"></div>
+            </div>
+        </div>
+        <div class="team2">
+            <div class="team2-boxtext">
+                <p class="team-text">EQUIPE</p>
+                <p class="area-text">Legislação</p>
+            </div>
+            <div class="team2-grid-students">
+                <div class="team2-student1 grid"></div>
+                <div class="team2-student2 grid"></div>
+                <div class="team2-student3 grid"></div>
+            </div>
+        </div>
+        <div class="team3">
+            <div class="team3-boxtext">
+                <p class="team-text">EQUIPE</p>
+                <p class="area-text">Economia</p>
+            </div>
+            <div class="team3-grid-students">
+                <div class="team3-student1 grid"></div>
+                <div class="team3-student2 grid"></div>
+                <div class="team3-student3 grid"></div>
+                <div class="team3-student4 grid"></div>
+                <div class="team3-student5 grid"></div>
+            </div>
+        </div>
+        <div class="team4">
+            <div class="team4-boxtext">
+                <p class="team-text">EQUIPE</p>
+                <p class="area-text">Mat. Financeira</p>
+            </div>
+            <div class="team4-grid-students">
+                <div class="team4-student1 grid"></div>
+                <div class="team4-student2 grid"></div>
+                <div class="team4-student3 grid"></div>
+                <div class="team4-student4 grid"></div>
+                <div class="team4-student5 grid"></div>
+                <div class="team4-student6 grid"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h1 class="title-footer"><img src="img/logo2.PNG" class="logo-footer" alt="">Resulte</h1>
+            <p class="p2">O segredo da prosperidade está na educação financeira</p>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h1>Páginas</h1>
+                </li>
+                <li>Contabilidade</li>
+                <li>Mat. financeira</li>
+                <li>legislação</li>
+                <li>economia</li>
+                <li>Equipe</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <h1>Contate-nos</h1>
+                </li>
+                <li>fiinn3333@gmai.com</li>
+                <li>00000-0000</li>
+            </ul>
+        </div>
+    </footer>
+    <p class="p-footer">todos os direitos reservados 2024 Resulte</p>
+    <nav class="navbar">
+        <div>
+            <div class="div-navbar">
+                <h1><img src="img/logo2.PNG" alt=""> Resulte</h1>
+                <i class="fa-solid fa-xmark" id="close-icon" onclick="fecharMenu()"></i>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Contabilidade</a>
+                <a href="#">Legislação</a>
+                <a href="#">Economia</a>
+                <a href="#">Matemática Financeira</a>
+                <a href="#">Equipe</a>
+            </nav>
+        </div>
+        <button class="button-naver" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+            <i class="fa-regular fa-moon"></i>
+        </button>
+    </nav>
+    <script src="Js/equipe.js"></script>
+</body>
+</html>
