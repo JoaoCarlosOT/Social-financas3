@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html{
+    height: 100%;
+}
+
+/*Header*/
+
+#div-section-1>p{
+    padding: calc(10% + 80px);
+    font-size: 2.7em;
+    font-weight: 500px;
+    color: rgb(255, 255, 255);
+}
+
+#parallax-image{
+    background-image: url(../img/group2.jpg
+    );
+    width: 100%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: #10482e;
+}
+
+/*fim Header*/
+
+
+/*Nav*/
+
+#nav-videos{
+    background-color: #10482e;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0px 0px 0px;
+}
+
+#nav-videos>p{
+    font-size: 23px;
+    color: white;
+    width: 70%;
+}
+
+/*Fim Nav*/
+
+
+/*Section videos*/
+
+#section-videos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.898);
+}
+
+#div-all-videos{
+    z-index: 1;
+    width: 1000px;
+    top: -240px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.videos{
+    width: 1000px;
+    height: 600px;
+}
+
+.h2-contabilidade-videos{
+    color: white;
+}
+
+.p-video-contabilidade{
+    color: white;
+}
+
+
+/*Fim section videos*/
+
+/**/
+/**/
+
+/**/
+/**/

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <script src="Js/home.js"></script>
+    <link rel="shortcut icon" href="img/logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Js/home.js"></script>
+    <title>Resulte</title>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+    <header>
+        <h1 data-aos="fade-right">
+            <img src="img/logo2.PNG" alt="" class="logo">Resulte
+        </h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="#">Contabilidade</a>
+            <a href="#">Legislação</a>
+            <a href="#">Economia</a>
+            <a href="#">Matemática Financeira</a>
+            <a href="equipe.html">Equipe</a>
+            <button class="button" 
+            data-aos="fade-up" 
+            data-aos-anchor-placement="center-bottom" 
+            onclick="mudarTemaEscuro()">
+                <i class="fa-regular fa-moon" id="icon-moon"></i>
+                <i class="fa-solid fa-circle" id="icon-sun"></i>
+            </button>
+
+            <i class="fa-solid fa-bars" id="menu-icon" onclick="abrirMenu()"></i>
+        </nav>
+    </header>
+    <div>
+    <section id="parallax-image" >
+        <div id="div-section-1">
+            <p>Contabilidade</p>
+        </div>
+    </section>
+    </div>
+        <nav id="nav-videos">
+            <p>Bem-vindos  ao  Finanças Jovens,  o  seu  portal  educativo  para  desvendar  os  segredos  do mundo financeiro! Aqui, acreditamos que o conhecimento  financeiro é  uma ferramenta poderosa paensino fundamental, o curso de finanç e a importância de pessoas com formação nesta área, incentivando-os a se inscrever para a escola.</p>
+        </nav>
+            <section id="section-videos">
+                <div id="div-all-videos">
+                  <div class="videos-contabilidade">
+                    <iframe src="https://www.youtube.com/embed/nqvHJwOsjhU" frameborder="0" class="videos" loops></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/eGeuNTd3-wo?si=W2yfCiY9gfMiOSpx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <h2 class="h2-contabilidade-videos">Video 1</h2>
+                        <p class="p-video-contabilidade">A vídeo aula fala sobre o modulo: Contabilidade  de Custos, mostrando respectivamente: seu conceito, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</p>
+                  </div> 
+                  <div class="videos-contabilidade">
+                  <video controls class="videos">
+                      <source src="../Social-financas3/videos/Contabilidade.mp4" type="video/mp4"  >       
+                  </video>
+                      <h2 class="h2-contabilidade-videos">Video 2</h2>
+                        <p class="p-video-contabilidade">A vídeo aula fala sobre o modulo: Contabilidade  de Custos, mostrando respectivamente: seu conceito, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</p>
+                  </div>
+                </div>
+            </section>
+</body>
+</html>
