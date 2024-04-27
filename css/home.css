@@ -53,6 +53,7 @@ header>nav>a{
 #icon-moon{
     color: white;
     font-size: 20px;
+    margin-top: 5px;
 }
 
 #icon-sun{
@@ -198,6 +199,70 @@ margin: 13px;
   z-index: 2;
 }
 
+/* sessão de curiosidades */
+.curiosidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #fff;
+    height: 100vh;
+    margin-top: 250px;
+}
+
+/* .curiosidades h2 {
+    
+}  */
+
+.paragrafo{
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+
+.duvida{
+    position: relative;
+    width: 80%;
+    height: 60px;
+   
+    
+}
+
+.duvida h3{
+    color: #fff;
+    border-radius: 20px;
+    height: -60px;
+    background-color: #17794B;
+    cursor: pointer;
+    padding: 14px;
+}
+
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border-right: 1px solid #17794B;
+    border-left: 1px solid #17794B;
+    border-bottom: 1px solid #17794B;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0px 24px;
+    height: 0;
+    opacity: 0;
+    /*ESCONDER*/
+    overflow: hidden;
+    transition: .2s;
+}
+
+.duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+
 footer{
     width: 100%;
     height: 270px;
@@ -207,6 +272,7 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 100px;
 }
 
 footer>div{
