@@ -1,9 +1,4 @@
 const mudarTemaEscuroEquipe = () => {
-
-    document.querySelectorAll('.grid').forEach((item) => {
-        item.style.background = '#ffffff';
-    });
-
     var body = document.querySelector('.body');
     body.style.background = '#2D2B2B';
     body.style.color = 'white';
@@ -25,4 +20,13 @@ const mudarTemaEscuroEquipe = () => {
 
     var p = document.querySelector('.p-footer');
     p.style.background = '#10482E';
+
+    var teamtext = document.querySelectorAll('.team-text');
+    var areatext = document.querySelectorAll('.area-text');
+    teamtext.forEach(ttext => {
+        ttext.style.color = 'white';
+    });
+    areatext.forEach(atext => {
+        atext.style.color = '#5AF0A9';
+    });
 };
