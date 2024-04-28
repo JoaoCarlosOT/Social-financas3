@@ -83,14 +83,55 @@ body{
     padding: 5%;
 }
 
-.team1, .team2, .team3, .team4{
-    margin-bottom: 15px;
+.selections {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.selectionseach{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-family: 'poppins';
+    font-weight: 200;
+    padding: 0.25em;
+    margin: 0.5em 0;
+    border: solid 1.5px rgb(23, 94, 160);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 1.5em;
+    cursor: pointer;
+}
+
+.selectionboxs{display: none;}
+label[onclick="section()"]{cursor: pointer;}
+.instagram{display: flex;justify-content: right;}
+
+.selection1:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+.selection2:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+.selection3:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+.selection4:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+.selection5:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+
+.selection1:has(> #team1:checked){background-color: rgb(29, 140, 243);color: white;}
+.selection2:has(> #team2:checked) {background-color: rgb(29, 140, 243);color: white;}
+.selection3:has(> #team3:checked) {background-color: rgb(29, 140, 243);color: white;}
+.selection4:has(> #team4:checked) {background-color: rgb(29, 140, 243);color: white;}
+.selection5:has(> #team5:checked) {background-color: rgb(29, 140, 243);color: white;}
+
+.team1, .team2, .team3, .team4, .team5{
+    margin-bottom: 15px;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     height: 100%;
+    display: none;
 }
+
 div[class*=-grid-students] {
     width: 100%;
     height: 100%;
@@ -136,10 +177,7 @@ div[class*=-boxtext]{
     background-size: cover;
     background-position: center;
 }
-.instagram{
-    display: flex;
-    justify-content: right;
-}
+
 .nametext{
     color: white;
     font-weight: 500;
@@ -147,6 +185,7 @@ div[class*=-boxtext]{
     text-shadow: #000000 1px 1px 3px;
     font-size: 1.8em;
 }
+
 .cargotext{
     color: white;
     font-family: 'poppins';
