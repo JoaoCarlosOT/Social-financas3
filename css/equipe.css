@@ -52,7 +52,7 @@ body{
     justify-content: left;
     margin-top: 50vh;
 }
-
+/* MAIS ESCURO PARALLAX
 .parallax-shadow{
     width: 100%;
     height: 100vh;
@@ -60,7 +60,7 @@ body{
     position: absolute;
     background: linear-gradient(to top, black, transparent);
 }
-
+*/
 .parallax-content{
     z-index: 1;
 }
@@ -123,120 +123,77 @@ div[class*=-boxtext]{
 
 .grid {
     background-color: #5B5B5B;
-    max-height: 500px;
-    height: 80vh;
     margin: 0.5% 0;
-}
-.team1-student1, .team1-student2 {
-    width: 45vw;
-    max-width: 36%;
-}
-.team2-student1, .team2-student3, .team2-student2 {
-    width: 45vw;
+    width: 25vw;
     max-width: 33%;
+    min-width: 300px;
+    max-height: 680px;
+    height: 70vh;
+    padding: 0.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover;
+    background-position: center;
 }
-.team2-student1, .team2-student2, .team2-student3 {
-    width: 45vw;
-    max-width: 33%;
+.instagram{
+    display: flex;
+    justify-content: right;
 }
-.team3-student1, .team3-student2{
-    width: 45vw;
-    max-width: 49%;
+.nametext{
+    color: white;
+    font-weight: 500;
+    font-family: 'poppins';
+    font-size: 1.8em;
 }
-.team3-student3, .team3-student4, .team3-student5{
-    width: 45vw;
-    max-width: 33%;
+.cargotext{
+    color: white;
+    font-family: 'poppins';
+    font-weight: 300;
+    font-size: 1.5em;
 }
-.team4-student1, .team4-student2, .team4-student3, .team4-student4, .team4-student5, .team4-student6 {
-    width: 33vw;
-    max-width: 33%;
-}
+/* FOTOS DOS ESTUDANTES -- GRID-STUDENTS*/
+.team1-student1{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student2{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student3{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student4{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student5{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student6{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student7{background-image: url(../img/FotoTestGrid.jpg);}
 
-/* FLEXIBILIDADE DO GRID --------- AJUSTAMENTO */
+.team2-student1{background-image: url(../img/FotoTestGrid.jpg);}
+.team2-student2{background-image: url(../img/FotoTestGrid.jpg);}
+.team2-student3{background-image: url(../img/FotoTestGrid.jpg);}
+.team2-student4{background-image: url(../img/FotoTestGrid.jpg);}
+.team2-student5{background-image: url(../img/FotoTestGrid.jpg);}
+.team2-student6{background-image: url(../img/FotoTestGrid.jpg);}
 
-/* CASE 1 - 2 students*/
-@media screen and (max-width: 1280px) {
+.team3-student1{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student2{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student3{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student4{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student5{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student6{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student7{background-image: url(../img/FotoTestGrid.jpg);}
 
-    .team1-student1, .team1-student2 {
-        width: 45vw;
-        max-width: 40%;
-        max-height: 380px;
-        height: 60vh;
-    }
-}
-@media screen and (max-width: 720px) {
-    .team1-student1, .team1-student2{
-        width: 45vw;
-        max-width: 49%;
-        max-height: 330px;
-        height: 50vh;
-    }
-}
-@media screen and (max-width: 682px) {
-    .team1-student1, .team1-student2 {
-        width: 45vw;
-        max-width: 49%;
-        max-height: 330px;
-        height: 50vh;
-    }
-}
 
-/* CASE 2 - 3 students*/
-@media screen and (max-width: 1280px) {
-    .team2-student1, .team2-student2, .team2-student3 {
-        width: 45vw;
-        max-width: 33%;
-        max-height: 380px;
-        height: 60vh;
-    }
-}
-@media screen and (max-width: 720px) {
-    /* FAZER NADA */
-}
-@media screen and (max-width: 682px) {
-    .team2-student1, .team2-student3, .team2-student2 {
-        width: 40vw;
-        max-width: 33%;
-        max-height: 320px;
-        height: 45vh;
-    }
-}
+.team4-student1{background-image: url(../img/FotoTestGrid.jpg);}
+.team4-student2{background-image: url(../img/FotoTestGrid.jpg);}
+.team4-student3{background-image: url(../img/FotoTestGrid.jpg);}
+.team4-student4{background-image: url(../img/FotoTestGrid.jpg);}
+.team4-student5{background-image: url(../img/FotoTestGrid.jpg);}
+.team4-student6{background-image: url(../img/FotoTestGrid.jpg);}
 
-/* CASE 3 - 5 students*/
-
-@media screen and (max-width: 720px) {
-    .team3-student1, .team3-student2 {
-        width: 45vw;
-        max-width: 49%;
-        max-height: 330px;
-        height: 50vh;
-    }
-    .team3-student3, .team3-student4, .team3-student5{
-        max-height: 320px;
-        height: 50vh;
-    }
+@media screen and (max-width: 1080px) {
+    .grid {
+            width: 33vw;
+            height: 50vh;
+        }
 }
-
-@media screen and (max-width: 682px) {
-    .team3-student1, .team3-student2{
-        width: 45vw;
-        max-width: 49%;
-        max-height: 330px;
-        height: 50vh;
-    }
-    .team3-student5, .team3-student4, .team3-student3{
+@media screen and (max-width: 1380px) {
+    .grid {
+        min-width: 350px;
         width: 33vw;
-        max-width: 33%;
-        max-height: 320px;
-        height: 50vh;
-    }
-}
-
-/* CASE 4 - more than 6 students*/
-
-@media screen and (max-width: 682px) {
-    .team4-student1, .team4-student2, .team4-student3, .team4-student4, .team4-student5, .team4-student6 {
-        max-height: 320px;
-        height: 50vh;
+        height: 65vh;
     }
 }
