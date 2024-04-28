@@ -144,45 +144,53 @@ div[class*=-boxtext]{
     color: white;
     font-weight: 500;
     font-family: 'poppins';
+    text-shadow: #000000 1px 1px 3px;
     font-size: 1.8em;
 }
 .cargotext{
     color: white;
     font-family: 'poppins';
     font-weight: 300;
+    text-shadow: #000000 1px 1px 3px;
     font-size: 1.5em;
 }
 /* FOTOS DOS ESTUDANTES -- GRID-STUDENTS*/
-.team1-student1{background-image: url(../img/FotoTestGrid.jpg);}
-.team1-student2{background-image: url(../img/FotoTestGrid.jpg);}
-.team1-student3{background-image: url(../img/FotoTestGrid.jpg);}
-.team1-student4{background-image: url(../img/FotoTestGrid.jpg);}
-.team1-student5{background-image: url(../img/FotoTestGrid.jpg);}
-.team1-student6{background-image: url(../img/FotoTestGrid.jpg);}
-.team1-student7{background-image: url(../img/FotoTestGrid.jpg);}
+.team1-student1{background-image: url(../img/FotosDasEquipes/kauanalves.png);}
+.team1-student2{background-image: url(../img/FotosDasEquipes/guilhermemarques.png);}
+.team1-student3{background-image: url(../img/FotosDasEquipes/renan.png);}
+.team1-student4{background-image: url(../img/FotosDasEquipes/israeltorres.png);}
+.team1-student5{background-image: url(../img/FotosDasEquipes/gabrielmota.png);}
+.team1-student6{background-image: url(../img/FotosDasEquipes/pedrohenrique.png);}
 
-.team2-student1{background-image: url(../img/FotoTestGrid.jpg);}
-.team2-student2{background-image: url(../img/FotoTestGrid.jpg);}
-.team2-student3{background-image: url(../img/FotoTestGrid.jpg);}
-.team2-student4{background-image: url(../img/FotoTestGrid.jpg);}
-.team2-student5{background-image: url(../img/FotoTestGrid.jpg);}
-.team2-student6{background-image: url(../img/FotoTestGrid.jpg);}
+.team2-student1{background-image: url(../img/FotosDasEquipes/marinamagalhaes.jpg);}
+.team2-student2{background-image: url(../img/FotosDasEquipes/isabelylino.png);}
+.team2-student3{background-image: url(../img/FotosDasEquipes/evelinalbuquerque.jpg);}
+.team2-student4{background-image: url(../img/FotosDasEquipes/charmile.png);}
+.team2-student5{background-image: url(../img/FotosDasEquipes/analivia.png);}
+.team2-student6{background-image: url(../img/FotosDasEquipes/vitoriajenifer.png);}
 
-.team3-student1{background-image: url(../img/FotoTestGrid.jpg);}
-.team3-student2{background-image: url(../img/FotoTestGrid.jpg);}
-.team3-student3{background-image: url(../img/FotoTestGrid.jpg);}
-.team3-student4{background-image: url(../img/FotoTestGrid.jpg);}
-.team3-student5{background-image: url(../img/FotoTestGrid.jpg);}
-.team3-student6{background-image: url(../img/FotoTestGrid.jpg);}
-.team3-student7{background-image: url(../img/FotoTestGrid.jpg);}
+.team3-student1{background-image: url(../img/FotosDasEquipes/ludmillamonteiro.png);}
+.team3-student2{background-image: url(../img/FotosDasEquipes/julianafeitosa.png);}
+.team3-student3{background-image: url(../img/FotosDasEquipes/saraellen.png);}
+.team3-student4{background-image: url(../img/FotosDasEquipes/lucasalves.jpg);}
+.team3-student5{background-image: url(../img/FotosDasEquipes/carloshenrique.jpg);}
+.team3-student6{background-image: url(../img/FotosDasEquipes/thiagoluna.png);}
+.team3-student7{background-image: url(../img/FotosDasEquipes/sarajustino.png);}
 
 
-.team4-student1{background-image: url(../img/FotoTestGrid.jpg);}
-.team4-student2{background-image: url(../img/FotoTestGrid.jpg);}
-.team4-student3{background-image: url(../img/FotoTestGrid.jpg);}
-.team4-student4{background-image: url(../img/FotoTestGrid.jpg);}
-.team4-student5{background-image: url(../img/FotoTestGrid.jpg);}
-.team4-student6{background-image: url(../img/FotoTestGrid.jpg);}
+.team4-student1{background-image: url(../img/FotosDasEquipes/franciscodeassis.png);}
+.team4-student2{background-image: url(../img/FotosDasEquipes/erick.png);}
+.team4-student3{background-image: url(../img/FotosDasEquipes/davisfelipe.png);}
+.team4-student4{background-image: url(../img/FotosDasEquipes/joelsondossantos.png);}
+.team4-student5{background-image: url(../img/FotosDasEquipes/mayronendew.png);}
+.team4-student6{background-image: url(../img/FotosDasEquipes/rafael.png);}
+
+.team5-student1{background-image: url(../img/FotosDasEquipes/marianamoura.jpg);}
+.team5-student2{background-image: url(../img/FotosDasEquipes/hezequiel.png);}
+.team5-student3{background-image: url(../img/FotosDasEquipes/m.eduardacosta.png);}
+.team5-student4{background-image: url(../img/FotosDasEquipes/eduardaduarte.png);}
+.team5-student5{background-image: url(../img/FotosDasEquipes/pablokevin.png);}
+.team5-student6{background-image: url(../img/FotosDasEquipes/sararebeca.png);}
 
 @media screen and (max-width: 1080px) {
     .grid {
