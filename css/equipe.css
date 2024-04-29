@@ -193,6 +193,13 @@ div[class*=-boxtext]{
     text-shadow: #000000 1px 1px 3px;
     font-size: 1.5em;
 }
+
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+}
 /* FOTOS DOS ESTUDANTES -- GRID-STUDENTS*/
 .team1-student1{background-image: url(../img/FotosDasEquipes/kauanalves.png);}
 .team1-student2{background-image: url(../img/FotosDasEquipes/guilhermemarques.png);}

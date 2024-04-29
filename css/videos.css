@@ -34,7 +34,7 @@ body,html{
 /*Nav*/
 
 #nav-videos{
-    background-color: #10482e;
+    background-color: #17794B;
     width: 100%;
     height: 186px;
     display: flex;
@@ -54,8 +54,10 @@ body,html{
 /*Barra de Quantidade de videos*/
 
 #div-main-duração{
+    margin-top: 30px;
    text-align: center;
    height: 200px;
+   background-color: #000;
 }
 
 .img-barra-de-nav{
@@ -67,6 +69,7 @@ body,html{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #000;
 }
 
 .barra-de-nav1{
@@ -103,7 +106,7 @@ body,html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.898);
+    background-color: #fff;
 }
 
 #div-all-videos{
@@ -144,6 +147,8 @@ body,html{
 
 /**/
 /**/
+
+
 
 @media screen and (max-width: 1020px){
 
