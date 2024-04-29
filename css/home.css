@@ -23,7 +23,7 @@ header>h1{
 }
 
 .logo{
-    width: 87px;
+    width: 80px;
     margin: 20px;
     color: white;
 }
@@ -58,18 +58,18 @@ header>nav>a{
 
 #icon-sun{
     display: none;
-    color: rgb(68, 68, 224);
+    color: rgb(240, 217, 12);
     font-size: 20px;
+   
 }
 
 main{
     width: 100%;
     height: 600px;
-    background-image: url(../img/img_text2.jpg);
+    background-image: url(../img/Screenshot_20240427_000239_Figma.jpg);
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed;
-    background-position: center top;
+    background-position:center;
     position: relative;
     display: flex;
     align-items: center;
@@ -137,7 +137,7 @@ article>h1>p{
     overflow: hidden;
     position: relative;
     margin: 15px;
-    background-color: bisque;
+    background-color: #ffffff;
     color: #17794B;
     display: flex;
     flex-direction: column;
@@ -209,7 +209,8 @@ margin: 13px;
     display: flex;
     align-items: center;
     gap: 64px;
-    padding: 64px 80px 30px 80px;
+    padding: 64px 80px 125px 80px;
+    
 }
 
 #curiosidades h2 {
@@ -268,35 +269,39 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 100px;
 }
 
 footer>div{
     display: flex;
     flex-direction: column;
     text-align: center;
-    display: block;
+    width: 300px;
 }
 
 .title-footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 200px;
+    width: 280px;
 }
 
 .p2{
-    width: 250px;
+    width: 300px;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .logo-footer{
     width: 80px;
-    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
-li{
-    list-style: none;
-    margin: 12px;
+footer>div>nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
 }
 
 .p-footer{
@@ -337,15 +342,17 @@ li{
     flex-direction: column;
 }
 
-.navbar div h1 img{
-    width: 70px;
+.div-navbar h1 img{
+    width: 58px;
+    margin: 10px;
+
 }
 
 .div-navbar>h1{
     display: flex;
-    align-items: center;
-   
+    align-items: center;  
 }
+
 .navbar nav a{
     text-decoration: none;
     color: #17794B;
@@ -371,7 +378,8 @@ li{
     height: 37px;
     border: none;
     background-color: rgb(44, 43, 43);
-    margin: 10px;
+    margin-left: 18px;
+    margin-bottom: 18px;
 }
 
 .button-naver>i{
@@ -379,10 +387,8 @@ li{
     font-size: 20px;
 }
 
-@media (max-width:1450px) and (min-width:1110px){
-}
 
-@media (max-width:1100px) and (min-width:500px){
+@media (max-width:1100px) and (min-width:310px){
     #menu-icon{
         display: inline;
     }
@@ -397,22 +403,62 @@ li{
         flex-wrap: wrap;
     }
     article>img{
-        width: 400px;
+        width: 470px;
     }
 
     .box{
         height: 2000px;
         flex-wrap: wrap;
     }
-    footer{
-    flex-direction: column;
-    height: 360px;
-    flex-wrap: wrap;
-    }
     
 }
 
+@media (max-width:680px) and (min-width:310px){
+    footer{
+        flex-direction: column;
+        height: 660px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 50px;
+    
+        }
+    
+        .div1-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title-footer{
+            width: 300px;
+        } 
+}
+
+@media (max-width:918px) and (min-width:680px){
+    footer{
+        height: 460px;
+    }
+}
+
+@media (max-width:1100px) and (min-width:1040px){
+    article>img{
+        width: 330px;
+    }
+}
+
+
+
 @media (max-width:1100px) and (min-width:710px){
+    .box{
+        height: 1000px;
+        flex-wrap: wrap;
+    }
+    article{
+        height: 800px;
+    }
+}
+
+@media (max-width:740px) and (min-width:675px){
     .box{
         height: 1000px;
         flex-wrap: wrap;
@@ -421,7 +467,7 @@ li{
 
 @media (max-width:740px) and (min-width:710px){
     .box{
-        height: 2000px;
+        height: 1000px;
         flex-wrap: wrap;
     }
 }
@@ -445,3 +491,41 @@ li{
         width: 400px;
     }
 }
+
+
+@media (max-width:520px) and (min-width:310px){
+    article{
+        height: 890px;
+        flex-wrap: wrap;
+    }
+    article>img{
+        width: 300px;
+    }
+    article>h1>{
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        height:400px;
+     }
+     
+     article>h1>p{
+         width: 300px;
+         height:530px;
+         font-weight: 400;
+         font-size: 0.7em;
+     }
+     header>h1{
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    .logo{
+        width: 63px;
+        margin: 20px;
+        color: white;
+    }     
+
+}
+
+

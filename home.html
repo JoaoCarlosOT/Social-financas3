@@ -6,7 +6,7 @@
     <title>Resulte</title>
     <link rel="stylesheet" href="css/home.css">
     <script src="Js/home.js"></script>
-    <link rel="shortcut icon" href="img/logo.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="img/logo4.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -19,7 +19,7 @@
       </script>
     <header>
         <h1 data-aos="fade-right">
-            <img src="img/logo2.PNG" alt="" class="logo">Resulte
+            <img src="img/logo4.png" alt="" class="logo">Resulte
         </h1>
         <nav>
             <a href="#">Home</a>
@@ -31,9 +31,9 @@
             <button class="button" 
             data-aos="fade-up" 
             data-aos-anchor-placement="center-bottom" 
-            onclick="mudarTemaEscuro()">
+            onclick="mudarTemaEscuro()" id="toggle">
                 <i class="fa-regular fa-moon" id="icon-moon"></i>
-                <i class="fa-solid fa-circle" id="icon-sun"></i>
+                <i class="fa-solid fa-sun" id="icon-sun"></i> 
             </button>
 
             <i class="fa-solid fa-bars" id="menu-icon" onclick="abrirMenu()"></i>
@@ -44,7 +44,7 @@
     </main>
 
     <article>
-        <img src="img/img_test.jpg" alt="" data-aos="fade-down">
+        <img src="img/Picsart_24-04-27_00-05-20-330.png" alt="" data-aos="fade-down">
         <h1 data-aos="fade-up">Sobre
             <p>Bem-vindos ao Finanças Jovens, o seu portal educativo  para  desvendar  os   segredos  do mundo financeiro ! Aqui,  acreditamos  que  o conhecimento  financeiro  é uma  ferramenta poderosa    para    o    sucesso    pessoal    e profissional. 
             O objetivo é promover aos jovens estudantes do ensino fundamental,  o  curso de finanças da  Escola  Estadual de Educação Profissional José     de     Barcelos,     além     de      mostrar superficialmente   o   que   vão   aprender,   as grandes       oportunidades       de      emprego, conhecimento, visão de futuro e a importância de    pessoas    com    formação    nesta    área, incentivando-os a se inscrever para a escola.</p>
@@ -86,7 +86,7 @@
 
     <section id="curiosidades">
         <div>
-            <h2>Curiosidades sobre nós:</h2>
+            <h2 class="title-curiosidades">Curiosidades sobre nós:</h2>
             <div class="duvida">
                 <h3>O que nos torna únicos?</h3>
                 <img src="img/arrow.png" alt="">
@@ -123,26 +123,26 @@
     
     
     <footer>
-        <div>
-            <h1 class="title-footer"><img src="img/logo2.PNG" class="logo-footer" alt="">Resulte</h1>
+        <div class="div1-footer">
+            <h1 class="title-footer"><img src="img/logo4.png" class="logo-footer" alt="">Resulte</h1>
             <p class="p2">O segredo da prosperidade está na educação financeira</p>
         </div>
         <div>
-            <ul>
-                <li><h1>Páginas</h1></li>
-                <li>Contabilidade</li>
-                <li>Mat. financeira</li>
-                <li>legislação</li>
-                <li>economia</li>
-                <li>Equipe</li>
-            </ul>
+            <nav>
+                <h1>Páginas</h1>
+                <a>Contabilidade</a>
+                <a>Mat. financeira</a>
+                <a>legislação</a>
+                <a>economia</a>
+                <a>Equipe</a>
+            </nav>
         </div>
         <div>
-            <ul>
-                <li><h1>Contate-nos</h1></li>
-                <li>fiinn3333@gmai.com</li>
-                <li>00000-0000</li>
-            </ul>
+            <nav>
+                <a><h1>Contate-nos</h1></a>
+                <a>fiinn3333@gmai.com</a>
+                <a>00000-0000</a>
+            </nav>
         </div>
     </footer>
     <p class="p-footer">todos os direitos reservados 2024 Resulte</p>
@@ -150,7 +150,7 @@
     <nav class="navbar">
         <div>
             <div class="div-navbar">
-                <h1><img src="img/logo2.PNG" alt=""> Resulte</h1>
+                <h1><img src="img/logo4.png" alt=""> Resulte</h1>
                 <i class="fa-solid fa-xmark" id="close-icon" onclick="fecharMenu()"></i>
             </div>
             <nav>

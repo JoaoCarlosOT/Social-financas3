@@ -22,6 +22,12 @@ const mudarTemaEscuro = () => {
     var tagWhite = document.querySelector('.box');
     tagWhite.style.background = '#2D2B2B';
 
+    var section = document.querySelector('#curiosidades');
+    section.style.background = '#2D2B2B';
+
+    var titleSection = document.querySelector('.title-curiosidades');
+    titleSection.style.color = 'white';
+
     var tagWhite = document.querySelector('.title-box');
     tagWhite.style.background = '#2D2B2B';
     tagWhite.style.color = 'white';
