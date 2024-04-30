@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Resulte - Portal educativo para desvendar os segredos do mundo financeiro! O objetivo é promover aos jovens estudantes do ensino fundamental, o curso de finanças da EEEP José de Barcelos.">
-    <link rel="stylesheet" href="css/home.css">
+    <meta name="description" content="Resulte - Portal educativo para desvendar os segredos do mundo financeiro! O objetivo é promover aos jovens estudantes do ensino fundamental, o curso de finanças da EEEP José de Barcelos.">
     <link rel="stylesheet" href="css/videos.css">
-    <script src="Js/home.js"></script>
-    <link rel="shortcut icon" href="img/logo4.PNG" type="image/x-icon">
+    <title>Resulte</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="img/logo4.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Js/home.js"></script>
-    <title>Resulte</title>
+    <script src="Js/videos.js"></script>
 </head>
-<body>
+<body class="body">
     <script>
         AOS.init();
-      </script>
+    </script>
+    
     <header>
         <h1 data-aos="fade-right">
-            <img src="img/logo4.PNG" alt="" class="logo">Resulte
+            <img src="img/Pararara.png" alt="" class="logo">Resulte
         </h1>
         <nav>
             <a href="home.html">Home</a>
@@ -30,17 +31,17 @@
             <a href="economia.html">Economia</a>
             <a href="matFinanceira.html">Matemática Financeira</a>
             <a href="equipe.html">Equipe</a>
-            <button class="button" 
-            data-aos="fade-up" 
-            data-aos-anchor-placement="center-bottom" 
-            onclick="mudarTemaEscuro()">
-                <i class="fa-regular fa-moon" id="icon-moon"></i>
-                <i class="fa-solid fa-circle" id="icon-sun"></i>
+            <button class="button" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+                onclick="mudarTemaEscuroVideos()" id="toggle">
+                <!--<i class="fa-regular fa-moon" id="icon-moon"></i>-->
+                <i class="bi bi-moon-fill" id="icon-moon"></i>
+                <i class="bi bi-brightness-high-fill" id="icon-sun"></i>
             </button>
-
+    
             <i class="fa-solid fa-bars" id="menu-icon" onclick="abrirMenu()"></i>
         </nav>
     </header>
+
     <div>
     <section id="parallax-image" >
         <div id="div-section-1">
@@ -48,111 +49,115 @@
         </div>
     </section>
     </div>
-        <nav id="nav-videos">
-            <p>Bem-vindos  ao  Finanças Jovens,  o  seu  portal  educativo  para  desvendar  os  segredos  do mundo financeiro! Aqui, acreditamos que o conhecimento  financeiro é  uma ferramenta poderosa paensino fundamental, o curso de finanç e a importância de pessoas com formação nesta área, incentivando-os a se inscrever para a escola.</p>
-        </nav>
-        <div id="div-main-duração">
-            <h2 id="h2-info">Informações sobre os videos</h2>
+    <nav id="nav-videos">
+        <p>Bem-vindos  ao  Finanças Jovens,  o  seu  portal  educativo  para  desvendar  os  segredos  do mundo financeiro! Aqui, acreditamos que o conhecimento  financeiro é  uma ferramenta poderosa paensino fundamental, o curso de finanç e a importância de pessoas com formação nesta área, incentivando-os a se inscrever para a escola.</p>
+    </nav>
+    <div id="div-main-duração">
+        <h2 id="h2-info">Informações sobre os videos</h2>
         <div id="barra-de-nav">
             <div class="barra-de-nav1">
                 <img src="img/books -white.png" alt="m" class="img-barra-de-nav">
-                <span>6</span>
+                <span>5</span>
                 <h6 class="letras-bar-nav">QUANTIDADE</h6>
             </div>
             <div class="barra-de-nav2">
-                <img src="img/time-forward -white.png" alt="" class="img-barra-de-nav">
-                <span>2:27</span>
+                <img src="img/time-forward -white.png" alt="m" class="img-barra-de-nav">
+                <span>2:58</span>
                 <h6 class="letras-bar-nav">DURAÇÃO MÉDIA</h6>
             </div>
             <div class="barra-de-nav3">
                 <img src="img/calendar-clock -white.png" alt="m" class="img-barra-de-nav">
-                <span>14:44</span>
+                <span>14:50</span>
                 <h6 class="letras-bar-nav">DURAÇÃO TOTAL</h6>
             </div>
         </div>
+    </div>
+    <section id="section-videos">
+        <div id="div-all-videos">
+            <div class="videos-contabilidade">
+            <iframe src="https://www.youtube.com/embed/nqvHJwOsjhU" title="YouTube video player" frameborder="0" class="videos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2 class="h2-contabilidade-videos">Aula 1- Conceito de contabilidade, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</h2>
+                <p class="p-video-contabilidade">A vídeo aula fala sobre o modulo: Contabilidade  de Custos, mostrando respectivamente: seu conceito, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</p>
+            </div> 
+            <div class="videos-contabilidade">
+            <iframe  src="https://www.youtube.com/embed/rPTBX245Pn0?si=m9WH2zTVihaxwJM6" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2 class="h2-contabilidade-videos">Aula 2- Principios da contabilidade- Contabilidade básica</h2>
+                <p class="p-video-contabilidade">A vídeo aula o aluno bota em pauta os princípios contabeis, falando do significado de cada e com exemplos, tudo isso dentro do módulo de contabilidade básica visando o total entendimento dos espectadores.</p>
+            </div>
+            <div class="videos-contabilidade">
+            <iframe src="https://www.youtube.com/embed/7e_cy8LJ-dY?si=XDsH42F3UQUF8P-i" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2 class="h2-contabilidade-videos">Aula 3- Livro Razão e Livro Diário. Contabilidade Básica</h2>
+                <p class="p-video-contabilidade">A vídeo aula abrange o conceito de receita e despesa, abordando sua definição, e relatando o livro Razão e o Livro Diário,  ajudando pessoas mais leigas no assunto, a organizar suas finanças, seja nos seus gastos e ganhos</p>
+            </div> 
+            <div class="videos-contabilidade">
+            <iframe  src="https://www.youtube.com/embed/ZtBKsB3jeSg?si=v_EoarKcBdBT-IzE" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2 class="h2-contabilidade-videos">Aula 4- Balanço patrimonial. Contabilidade básica</h2>
+                <p class="p-video-contabilidade">A vídeo aula abrange o conceito de receita e despesa, abordando sua definição, e relatando o livro Razão e o Livro Diário,  ajudando pessoas mais leigas no assunto, a organizar suas finanças, seja nos seus gastos e ganhos</p>
+            </div>
+            <div class="videos-contabilidade">
+            <iframe src="https://www.youtube.com/embed/xgIbPa8-wkc?si=kjHzsAa0s2fqGamf" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2 class="h2-contabilidade-videos">Aula 5 - Tudo o que você precisa saber sobre FLUXO DE CAIXA! (Projeto Social EEEP José De Barcelos)</h2>
+                <p class="p-video-contabilidade">A vídeo aula abrange o conceito de receita e despesa, abordando sua definição, e relatando o livro Razão e o Livro Diário,  ajudando pessoas mais leigas no assunto, a organizar suas finanças, seja nos seus gastos e ganhos</p>
+            </div>
+        </div>          
+    </section>
+    <footer>
+        <div class="div1-footer">
+            <h1 class="title-footer"><img src="img/logo4.png" class="logo-footer" alt="">Resulte</h1>
+            <p class="p2">O segredo da prosperidade está na educação financeira</p>
         </div>
-            <section id="section-videos">
-                <div id="div-all-videos">
-                  <div class="videos-contabilidade">
-                    <iframe src="https://www.youtube.com/embed/nqvHJwOsjhU" title="YouTube video player" frameborder="0" class="videos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <h2 class="h2-contabilidade-videos">Aula 1- Conceito de contabilidade, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</h2>
-                        <p class="p-video-contabilidade">A vídeo aula fala sobre o modulo: Contabilidade  de Custos, mostrando respectivamente: seu conceito, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</p>
-                  </div> 
-                  <div class="videos-contabilidade">
-                    <iframe  src="https://www.youtube.com/embed/rPTBX245Pn0?si=m9WH2zTVihaxwJM6" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <h2 class="h2-contabilidade-videos">Aula 2- Principios da contabilidade- Contabilidade básica</h2>
-                        <p class="p-video-contabilidade">A vídeo aula o aluno bota em pauta os princípios contabeis, falando do significado de cada e com exemplos, tudo isso dentro do módulo de contabilidade básica visando o total entendimento dos espectadores.</p>
-                  </div>
-                  <div class="videos-contabilidade">
-                  <iframe src="https://www.youtube.com/embed/7e_cy8LJ-dY?si=XDsH42F3UQUF8P-i" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <h2 class="h2-contabilidade-videos">Aula 3- Livro Razão e Livro Diário. Contabilidade Básica</h2>
-                        <p class="p-video-contabilidade">A vídeo aula abrange o conceito de receita e despesa, abordando sua definição, e relatando o livro Razão e o Livro Diário,  ajudando pessoas mais leigas no assunto, a organizar suas finanças, seja nos seus gastos e ganhos</p>
-                  </div> 
-                  <div class="videos-contabilidade">
-                    <iframe  src="https://www.youtube.com/embed/ZtBKsB3jeSg?si=v_EoarKcBdBT-IzE" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <h2 class="h2-contabilidade-videos">Aula 4- Balanço patrimonial. Contabilidade básica</h2>
-                        <p class="p-video-contabilidade">A vídeo aula abrange o conceito de receita e despesa, abordando sua definição, e relatando o livro Razão e o Livro Diário,  ajudando pessoas mais leigas no assunto, a organizar suas finanças, seja nos seus gastos e ganhos</p>
-                  </div>
-                  <div class="videos-contabilidade">
-                    <iframe src="https://www.youtube.com/embed/xgIbPa8-wkc?si=kjHzsAa0s2fqGamf" title="YouTube video player" class="videos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                      <h2 class="h2-contabilidade-videos">Aula 5 - Tudo o que você precisa saber sobre FLUXO DE CAIXA! (Projeto Social EEEP José De Barcelos)</h2>
-                        <p class="p-video-contabilidade">A vídeo aula abrange o conceito de receita e despesa, abordando sua definição, e relatando o livro Razão e o Livro Diário,  ajudando pessoas mais leigas no assunto, a organizar suas finanças, seja nos seus gastos e ganhos</p>
-                  </div>
-                </div>          
-            </section>
-            <footer id="footer-cursos">
-                <div>
-                    <h1 class="title-footer"><img src="img/logo2.PNG" class="logo-footer" alt="">Resulte</h1>
-                    <p class="p2">O segredo da prosperidade está na educação financeira</p>
-                </div>
-                <div>
-                    <ul>
-                        <li><h1>Páginas</h1></li>
-                        <a href="contabilidade.html">
-                            <li>Contabilidade</li>
-                        </a>
-                        <a href="matFinanceira.html">
-                            <li>Mat. financeira</li>
-                        </a>
-                        <a href="legislacao.html">
-                            <li>legislação</li>
-                        </a>
-                        <a href="economia.html">
-                            <li>economia</li>
-                        </a>
-                        <a href="equipe.html">
-                            <li>Equipe</li>
-                        </a>
-                    </ul>
-                </div>
-                <div>
-                    <ul>
-                        <li><h1>Contate-nos</h1></li>
-                        <li>fin32024projsoc@gmail.com</li>
-                        <li>00000-0000</li>
-                    </ul>
-                </div>
-            </footer>
-            <p class="p-footer">todos os direitos reservados 2024 Resulte</p>
-        
-            <nav class="navbar">
-                <div>
-                    <div class="div-navbar">
-                        <h1><img src="img/logo2.PNG" alt=""> Resulte</h1>
-                        <i class="fa-solid fa-xmark" id="close-icon" onclick="fecharMenu()"></i>
-                    </div>
-                    <nav>
-                        <a href="home.html">Home</a>
-                        <a href="contabilidade.html">Contabilidade</a>   
-                        <a href="legislacao.html">Legislação</a>
-                        <a href="economia.html">Economia</a>
-                        <a href="matFinanceira.html">Matemática Financeira</a>
-                        <a href="equipe.html">Equipe</a>
-                    </nav>
-                </div>
-                
-                
-                <button class="button-naver" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><i class="fa-regular fa-moon"></i></button>
+        <div>
+            <nav>
+                <h1>Páginas</h1>
+                <a href="contabilidade.html">
+                    <li>Contabilidade</li>
+                </a>
+                <a href="matFinanceira.html">
+                    <li>Mat. financeira</li>
+                </a>
+                <a href="legislacao.html">
+                    <li>legislação</li>
+                </a>
+                <a href="economia.html">
+                    <li>economia</li>
+                </a>
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <a href="equipe.html">
+                    <li>Equipe</li>
+                </a>
             </nav>
+        </div>
+        <div>
+            <nav>
+                <a>
+                    <h1>Contate-nos</h1>
+                </a>
+                <a>fin32024projsoc@gmail.com</a>
+            </nav>
+        </div>
+    </footer>
+    <p class="p-footer">todos os direitos reservados 2024 Resulte</p>
+
+    <nav class="navbar">
+        <div>
+            <div class="div-navbar">
+                <h1><img src="img/logo2.PNG" alt=""> Resulte</h1>
+                <i class="fa-solid fa-xmark" id="close-icon" onclick="fecharMenu()"></i>
+            </div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="contabilidade.html">Contabilidade</a>   
+                <a href="legislacao.html">Legislação</a>
+                <a href="economia.html">Economia</a>
+                <a href="matFinanceira.html">Matemática Financeira</a>
+                <a href="equipe.html">Equipe</a>
+            </nav>
+        </div>
+        
+        
+        <button class="button-naver" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><i class="fa-regular fa-moon"></i></button>
+    </nav>
 </body>
 </html>

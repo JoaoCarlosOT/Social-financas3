@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resulte</title>
     <meta name="description" content="Resulte - Portal educativo para desvendar os segredos do mundo financeiro! O objetivo é promover aos jovens estudantes do ensino fundamental, o curso de finanças da EEEP José de Barcelos.">
-    <link rel="stylesheet" href="css/home.css">
+    <title>Resulte</title>
     <link type="text/css" rel="stylesheet" href="css/equipe.css">
-    <link rel="shortcut icon" href="img/logo4.PNG" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="Js/home.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="img/logo4.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="Js/home.js"></script>
 </head>
 <body class="body">
     <script>
         AOS.init();
     </script>
+
     <header>
         <h1 data-aos="fade-right">
-            <img src="img/logo4.PNG" alt="" class="logo">Resulte
+            <img src="img/Pararara.png" alt="" class="logo">Resulte
         </h1>
         <nav>
             <a href="home.html">Home</a>
@@ -30,14 +30,16 @@
             <a href="economia.html">Economia</a>
             <a href="matFinanceira.html">Matemática Financeira</a>
             <a href="equipe.html">Equipe</a>
-            <button class="button" data-aos="fade-up" data-aos-anchor-placement="center-bottom" onclick="mudarTemaEscuroEquipe()">
-                <i class="fa-regular fa-moon" id="icon-moon"></i>
-                <i class="fa-solid fa-circle" id="icon-sun"></i>
+            <button class="button" data-aos="fade-up" data-aos-anchor-placement="center-bottom" onclick="mudarTemaEscuroEquipe()" id="toggle">
+                <!--<i class="fa-regular fa-moon" id="icon-moon"></i>-->
+                <i class="bi bi-moon-fill" id="icon-moon"></i>
+                <i class="bi bi-brightness-high-fill" id="icon-sun"></i>
             </button>
     
             <i class="fa-solid fa-bars" id="menu-icon" onclick="abrirMenu()"></i>
         </nav>
     </header>
+
     <div class="element-1">
         <div class="container-class"></div>
         <div class="parallax-box">
@@ -755,15 +757,13 @@
         </div>
     </div>
     <footer>
-        <div>
-            <h1 class="title-footer"><img src="img/logo2.PNG" class="logo-footer" alt="">Resulte</h1>
+        <div class="div1-footer">
+            <h1 class="title-footer"><img src="img/logo4.png" class="logo-footer" alt="">Resulte</h1>
             <p class="p2">O segredo da prosperidade está na educação financeira</p>
         </div>
         <div>
-            <ul>
-                <li>
-                    <h1>Páginas</h1>
-                </li>
+            <nav>
+                <h1>Páginas</h1>
                 <a href="contabilidade.html">
                     <li>Contabilidade</li>
                 </a>
@@ -776,19 +776,21 @@
                 <a href="economia.html">
                     <li>economia</li>
                 </a>
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
                 <a href="equipe.html">
                     <li>Equipe</li>
                 </a>
-            </ul>
+            </nav>
         </div>
         <div>
-            <ul>
-                <li>
+            <nav>
+                <a>
                     <h1>Contate-nos</h1>
-                </li>
-                <li>fin32024projsoc@gmail.com</li>
-                <li>00000-0000</li>
-            </ul>
+                </a>
+                <a>fin32024projsoc@gmail.com</a>
+            </nav>
         </div>
     </footer>
     <p class="p-footer">todos os direitos reservados 2024 Resulte</p>
