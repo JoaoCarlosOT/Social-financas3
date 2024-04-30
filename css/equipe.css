@@ -33,6 +33,9 @@ body{
     background-attachment: fixed;
     background-position: center;
     position: absolute;
+}
+
+.container-class:after {
     filter: brightness(80%);
 }
 
@@ -71,7 +74,8 @@ body{
     font-size: 2.6em;
     letter-spacing: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 250px;
+    transform: translateX(22vw);
+    width: 100%;
 }
 
 /*=================  GRADE - FLEXBOX =================*/
@@ -98,6 +102,7 @@ body{
     color: rgb(0, 0, 0);
     font-family: 'poppins';
     font-weight: 200;
+    font-size: 1em;
     padding: 0.25em;
     margin: 0.5em 0;
     border: solid 1.5px rgb(23, 94, 160);
@@ -111,21 +116,23 @@ body{
 
 .selectionboxs{display: none;}
 label[onclick="section()"]{cursor: pointer;}
-.instagram{display: flex;justify-content: right;}
+.Linkedin{display: flex;justify-content: right;}
 
 .selection1:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection2:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection3:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection4:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection5:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+.selection6:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 
 .selection1:has(> #team1:checked){background-color: rgb(29, 140, 243);color: white;}
 .selection2:has(> #team2:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection3:has(> #team3:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection4:has(> #team4:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection5:has(> #team5:checked) {background-color: rgb(29, 140, 243);color: white;}
+.selection6:has(> #team6:checked) {background-color: rgb(29, 140, 243);color: white;}
 
-.team1, .team2, .team3, .team4, .team5{
+.team1, .team2, .team3, .team4, .team5, .team6{
     margin-bottom: 15px;
     flex-direction: column;
     justify-content: center;
@@ -174,12 +181,12 @@ div[class*=-boxtext]{
     height: 70vh;
     padding: 0.2em;
     display: flex;
+    border-radius: 2%;
     flex-direction: column;
     justify-content: space-between;
     background-size: cover;
     background-position: center;
 }
-
 .nametext{
     color: white;
     font-weight: 500;
@@ -202,6 +209,7 @@ footer a {
     text-decoration: none;
     list-style: none;
 }
+
 /* FOTOS DOS ESTUDANTES -- GRID-STUDENTS*/
 .team1-student1{background-image: url(../img/FotosDasEquipes/kauanalves.png);}
 .team1-student2{background-image: url(../img/FotosDasEquipes/guilhermemarques.png);}
@@ -240,6 +248,13 @@ footer a {
 .team5-student5{background-image: url(../img/FotosDasEquipes/pablokevin.png);}
 .team5-student6{background-image: url(../img/FotosDasEquipes/sararebeca.png);}
 
+.team6-student1{background-image: url(../img/EquipeDeProgramacao/escobarly.jpg);}
+.team6-student2{background-image: url(../img/EquipeDeProgramacao/joaocarlos.jpg);}
+.team6-student3{background-image: url(../img/EquipeDeProgramacao/samyla.jpg);}
+.team6-student4{background-image: url(../img/EquipeDeProgramacao/vinicius.jpg);}
+.team6-student5{background-image: url(../img/EquipeDeProgramacao/lauraksksksk.webp);}
+.team6-student6{background-image: url(../img/EquipeDeProgramacao/alvaro.jpg);}
+
 @media screen and (max-width: 1080px) {
     .grid {
             width: 33vw;
@@ -251,5 +266,18 @@ footer a {
         min-width: 350px;
         width: 33vw;
         height: 65vh;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .grid {
+        min-width: 350px;
+        width: 33vw;
+        height: 65vh;
+    }  
+}
+@media screen and (max-width: 820px) {
+    .titleparallax {
+        transform: translateX(10vw);
     }
 }
