@@ -6,6 +6,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/*::-webkit-scrollbar{
+ width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #17794B;
+}*/
+
 header{
     width: 100%;
     height: 90px;
@@ -23,7 +31,7 @@ header>h1{
 }
 
 .logo{
-    width: 80px;
+    width: 70px;
     margin: 20px;
     color: white;
 }
@@ -203,6 +211,14 @@ margin: 13px;
 
 /* sessão de curiosidades */
 
+details{
+    font-weight: 400;
+}
+
+#curiosidades{
+    padding-bottom: 100px;
+}
+
 
 .title-curiosidades {
     text-align: center;
@@ -322,6 +338,7 @@ footer>div>nav{
     font-size: 35px;
     color: #17794B;
     margin: 20px;
+    cursor: pointer;
 }
 
 .div-navbar{
@@ -483,12 +500,15 @@ footer>div>nav{
     article>h1>p{
         width: 400px;
     }
+    article{
+        height: 900px;
+    }
 }
 
 
 @media (max-width:520px) and (min-width:310px){
     article{
-        height: 890px;
+        height: 1100px;
         flex-wrap: wrap;
     }
     article>img{
@@ -502,10 +522,12 @@ footer>div>nav{
      }
      
      article>h1>p{
-         width: 300px;
-         height:530px;
+         width: 270px;
+         height:600px;
          font-weight: 400;
          font-size: 0.7em;
+         padding-bottom: 80px;
+         
      }
      header>h1{
         display: flex;
