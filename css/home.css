@@ -56,6 +56,7 @@ header>nav>a{
     border: none;
     background-color: rgb(44, 43, 43);
     margin: 10px;
+    cursor: pointer;
 }
 
 #icon-moon{
@@ -386,19 +387,23 @@ footer>div>nav{
     flex-direction: column;
 }
 
-.button-naver{
-    border-radius: 50px;
-    width: 37px;
-    height: 37px;
-    border: none;
-    background-color: rgb(44, 43, 43);
-    margin-left: 18px;
-    margin-bottom: 18px;
+.dark-verde{
+    background-color: #10482E;
+    transition:.3s;
 }
 
-.button-naver>i{
+.dark{
+    background-color: #2D2B2B;
+    transition:.3s;
+}
+
+.title-dark{
     color: white;
-    font-size: 20px;
+    transition:.3s;
+}
+
+.button-white{
+    background-color: #fff;
 }
 
 
@@ -406,10 +411,11 @@ footer>div>nav{
     #menu-icon{
         display: inline;
     }
-    header>nav>a{
-        display: none;
+    header>nav{
+        display:flex;
+        align-items: center;
     }
-    header>nav>button{
+    header>nav>a{
         display: none;
     }
     article{
