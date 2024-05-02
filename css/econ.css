@@ -1,6 +1,5 @@
 .parallax-image{
     background-image: url(../img/economia.jpg);
-    filter: brightness(50%); 
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
