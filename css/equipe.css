@@ -244,12 +244,12 @@ footer a {
 .team5-student5{background-image: url(../img/FotosDasEquipes/pablokevin.png);}
 .team5-student6{background-image: url(../img/FotosDasEquipes/sararebeca.png);}
 
-.team6-student1{background-image: url(../img/EquipeDeProgramacao/escobarly.jpg);}
-.team6-student2{background-image: url(../img/EquipeDeProgramacao/joaocarlos.jpg);}
+.team6-student1{background-image: url(../img/EquipeDeProgramacao/joaocarlos.jpg);}
+.team6-student2{background-image: url(../img/EquipeDeProgramacao/escobarly.jpg);}
 .team6-student3{background-image: url(../img/EquipeDeProgramacao/samyla.jpg);}
 .team6-student4{background-image: url(../img/EquipeDeProgramacao/vinicius.jpg);}
-.team6-student5{background-image: url(../img/EquipeDeProgramacao/lauraksksksk.webp);}
-.team6-student6{background-image: url(../img/EquipeDeProgramacao/alvaro.jpg);}
+.team6-student5{background-image: url(../img/EquipeDeProgramacao/laura.webp);}
+.team6-student6{background-image: url(../img/EquipeDeProgramacao/alvororuan.jpg);}
 
 @media screen and (max-width: 1080px) {
     .grid {
