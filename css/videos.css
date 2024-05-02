@@ -10,14 +10,14 @@ body,html{
 
 /*Header*/
 
-#div-section-1>p{
+.div-section-1>p{
     padding: calc(10% + 80px);
     font-size: 2.7em;
     font-weight: 500px;
     color: rgb(255, 255, 255);
 }
 
-#parallax-image{
+.parallax-image{
     background-image: url(../img/contabilidade.jpg
     );
     filter: brightness(50%);
@@ -34,7 +34,7 @@ body,html{
 
 /*Nav*/
 
-#nav-videos{
+.nav-videos{
     background-color: #17794B;
     width: 100%;
     height: 186px;
@@ -43,7 +43,7 @@ body,html{
     padding: 50px 0px 0px 0px;
 }
 
-#nav-videos>p{
+.nav-videos>p{
     font-size: 23px;
     color: white;
     width: 70%;
@@ -54,16 +54,16 @@ body,html{
 
 /*Barra de Quantidade de videos*/
 
-#h2-info {
+.h2-info {
     color: #fff;
     margin-bottom: 30px;
 }
 
-#div-main-duração{
-margin-top: 30px;
-   text-align: center;
-   height: 200px;
-   background-color: #000;
+.div-main-duração{
+    margin-top: 30px;
+    text-align: center;
+    height: 200px;
+    background-color: #000;
 }
 
 .img-barra-de-nav{
@@ -71,17 +71,16 @@ margin-top: 30px;
     height: auto;
 }
 
-#barra-de-nav{
+.barra-de-nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #000;
 }
 
-#barra-de-nav span {
+.barra-de-nav span {
     color: #34D91A;
 }
-
 .letras-bar-nav {
     color: #fff;
     margin-bottom: 20px;
@@ -115,7 +114,7 @@ margin-top: 30px;
 
 /*Section videos*/
 
-#section-videos{
+.section-videos{
     width: 100%;
     height: auto;
     display: flex;
@@ -124,7 +123,7 @@ margin-top: 30px;
     background-color: #fff;
 }
 
-#div-all-videos{
+.div-all-videos{
     padding: 30px 0px 0px 0px;
     width: 1000px;
     display: flex;
@@ -156,7 +155,7 @@ margin-top: 30px;
 
 /*Fim section videos*/
 
-#footer-cursos{
+.footer-cursos{
     margin-top: 0px;
 }
 
@@ -167,9 +166,8 @@ margin-top: 30px;
 
 @media screen and (max-width: 1020px){
 
-    #parallax-image{
-        background-image: url(../img/group2.jpg
-        );
+    .parallax-image{
+        background-image: url(../img/group2.jpg);
         width: 100%;
         height: 500px;
         background-position: center;
@@ -177,18 +175,18 @@ margin-top: 30px;
         background-color: #10482e;
     }
     
-    #div-section-1>p{
+    .div-section-1>p{
         padding: 260px 4%;
         font-size: 2.3em;
         font-weight: 500px;
     }
 
-    #nav-videos{
+    .nav-videos{
         height: 310px;
         padding: 10px 0px 0px 0px;
     }
 
-    #nav-videos>p{
+    .nav-videos>p{
         padding: 20px 4%;
         font-size: 1.1em;
         color: white;
@@ -202,7 +200,7 @@ margin-top: 30px;
         padding: 10px 4%;
     }
 
-    #div-main-duração{
+    .div-main-duração{
         text-align: center;
         height: 250px;
         display: flex;
@@ -213,7 +211,7 @@ margin-top: 30px;
         font-size: 0.7em;
      }
 
-     #h2-info{
+     .h2-info{
         padding: 10px 4%;
      }
 
@@ -235,3 +233,33 @@ margin-top: 30px;
 
 /**/
 /**/
+
+.colorgreen {
+    color: #1AA744;
+}
+
+.ttext {
+    filter: brightness(99%) saturate(100%) invert(0%) sepia(0%) hue-rotate(308deg) contrast(101%);
+}
+
+.darkmode0 {
+    color: white;
+}
+.dark-verde {
+    background-color: #10482E;
+    transition: .3s;
+}
+
+.dark {
+    background-color: #2D2B2B;
+    transition: .3s;
+}
+
+.title-dark {
+    color: white;
+    transition: .3s;
+}
+
+.button-white {
+    background-color: #fff;
+}

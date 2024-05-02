@@ -54,7 +54,6 @@ const mudarTemaEscuro = () => {
     var footer = document.getElementsByTagName("footer")[0];
     footer.classList.toggle('dark-verde');
 
-
     document.body.classList.toggle('dark');
 
     const iconMoon = document.querySelector('#icon-moon');
@@ -69,8 +68,6 @@ const mudarTemaEscuro = () => {
 };
 
 document.getElementById("toggle-navbar").addEventListener("click", mudarTemaEscuro);
-
-
 document.querySelector('.button').addEventListener("click", mudarTemaEscuro);
 document.querySelector('.abrir-btn').addEventListener("click", abrirMenu);
 document.querySelector('.fechar-btn').addEventListener("click", fecharMenu);

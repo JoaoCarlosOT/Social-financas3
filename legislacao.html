@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Js/home.js"></script>
-    <script src="Js/videos.js"></script>
 </head>
 <body class="body">
     <script>
@@ -33,7 +32,6 @@
             <a href="equipe.html">Equipe</a>
             <button class="button" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
                 onclick="mudarTemaEscuroVideos()" id="toggle">
-                <!--<i class="fa-regular fa-moon" id="icon-moon"></i>-->
                 <i class="bi bi-moon-fill" id="icon-moon"></i>
                 <i class="bi bi-brightness-high-fill" id="icon-sun"></i>
             </button>
@@ -43,18 +41,18 @@
     </header>
 
     <div>
-    <section id="parallax-image" >
-        <div id="div-section-1">
-            <p>Legislação</p>
+    <section class="parallax-image" >
+        <div class="div-section-1">
+            <p>Contabilidade</p>
         </div>
     </section>
     </div>
-    <nav id="nav-videos">
+    <nav class="nav-videos">
         <p>Bem-vindos  ao  Finanças Jovens,  o  seu  portal  educativo  para  desvendar  os  segredos  do mundo financeiro! Aqui, acreditamos que o conhecimento  financeiro é  uma ferramenta poderosa paensino fundamental, o curso de finanç e a importância de pessoas com formação nesta área, incentivando-os a se inscrever para a escola.</p>
     </nav>
-    <div id="div-main-duração">
-        <h2 id="h2-info">Informações sobre os videos</h2>
-        <div id="barra-de-nav">
+    <div class="div-main-duração">
+        <h2 class="h2-info">Informações sobre os videos</h2>
+        <div class="barra-de-nav">
             <div class="barra-de-nav1">
                 <img src="img/books -white.png" alt="m" class="img-barra-de-nav">
                 <span>5</span>
@@ -72,8 +70,8 @@
             </div>
         </div>
     </div>
-    <section id="section-videos">
-        <div id="div-all-videos">
+    <section class="section-videos">
+        <div class="div-all-videos">
             <div class="videos-contabilidade">
             <iframe src="https://www.youtube.com/embed/nqvHJwOsjhU" title="YouTube video player" frameborder="0" class="videos" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <h2 class="h2-contabilidade-videos">Aula 1- Conceito de contabilidade, o que ela abrange, qual sua finalidade e em quê ela é aplicada.</h2>
@@ -144,7 +142,7 @@
         <div>
             <div class="div-navbar">
                 <h1><img src="img/logo2.PNG" alt=""> Resulte</h1>
-                <i class="fa-solid fa-xmark" id="close-icon" onclick="fecharMenu()"></i>
+                <i class="fa-solid fa-xmark" class="close-icon" onclick="fecharMenu()"></i>
             </div>
             <nav>
                 <a href="home.html">Home</a>
@@ -159,5 +157,6 @@
         
         <button class="button-naver" data-aos="fade-up" data-aos-anchor-placement="center-bottom"><i class="fa-regular fa-moon"></i></button>
     </nav>
+    <script src="Js/videos.js"></script>
 </body>
 </html>

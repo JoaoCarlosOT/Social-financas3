@@ -1,38 +1,51 @@
+var team1 = document.querySelector('.team1');
+var sections = document.querySelectorAll('.selectionboxs');
+sections.forEach(section => {
+    if(section.value == 1){
+        section.checked;
+        team1.style.display = "flex";
+    }
+});
+
 const mudarTemaEscuroEquipe = () => {
+    var header = document.getElementsByTagName("header")[0];
+    header.classList.toggle('dark-verde');
+
+    var button = document.getElementsByTagName("button")[0];
+    button.classList.toggle('button-white');
+
+    var p = document.querySelector('.p-footer');
+    p.classList.toggle('dark-verde');
+
+    var footer = document.getElementsByTagName("footer")[0];
+    footer.classList.toggle('dark-verde');
+
+    const iconMoon = document.querySelector('#icon-moon');
+    const iconSun = document.querySelector('#icon-sun');
+
+    const isDarkMode = document.body.classList.contains('dark');
+
+    iconMoon.style.display = isDarkMode ? 'inline' : 'none';
+    iconSun.style.display = isDarkMode ? 'none' : 'inline';
+
     var body = document.querySelector('.body');
-    body.style.background = '#2D2B2B';
-    body.style.color = 'white';
+    var selectionseach = document.querySelector('.selectionseach');
+    selectionseach.classList.toggle('title-dark');
+    body.classList.toggle('title-dark');
+    body.classList.toggle('dark');
 
     var letters = document.querySelectorAll('.selectionseach');
     letters.forEach(ttext => {
-        ttext.style.color = 'white';
+        ttext.classList.toggle('title-dark');
     });
-
-    var header = document.getElementsByTagName("header")[0];
-    header.style.background = '#10482E';
-
-    var button = document.getElementsByTagName("button")[0];
-    button.style.background = '#fff';
-
-    var iconsun = document.querySelector('#icon-sun');
-    iconsun.style.display = 'inline';
-
-    var iconmoon = document.querySelector('#icon-moon');
-    iconmoon.style.display = 'none';
-
-    var footer = document.getElementsByTagName("footer")[0];
-    footer.style.background = '#10482E';
-
-    var p = document.querySelector('.p-footer');
-    p.style.background = '#10482E';
 
     var teamtext = document.querySelectorAll('.team-text');
     var areatext = document.querySelectorAll('.area-text');
     teamtext.forEach(ttext => {
-        ttext.style.color = 'white';
+        ttext.classList.toggle('title-dark');
     });
     areatext.forEach(atext => {
-        atext.style.color = '#1AA744';
+        atext.classList.toggle('titled4rk');
     });
 };
 
@@ -92,11 +105,5 @@ const section = () => {
     }, 10);
 }
 
-var team1 = document.querySelector('.team1');
-var sections = document.querySelectorAll('.selectionboxs');
-sections.forEach(section => {
-    if(section.value == 1){
-        section.checked;
-        team1.style.display = "flex";
-    }
-});
+document.getElementById("toggle-navbar").addEventListener("click", mudarTemaEscuroEquipe);
+document.querySelector('.button').addEventListener("click", mudarTemaEscuroEquipe);
