@@ -29,8 +29,9 @@ const mudarTemaEscuroVideos = () => {
         ttext.classList.toggle('title-dark');
     });
     areatext.forEach(atext => {
-        atext.classList.toggle('colorgreen');
+        atext.classList.toggle('title-dark');
     });
+    
 
     var header = document.getElementsByTagName("header")[0];
     header.classList.toggle('dark-verde');

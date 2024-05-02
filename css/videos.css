@@ -14,10 +14,8 @@ body,html{
     padding: calc(10% + 80px);
     font-size: 2.7em;
     font-weight: 500px;
-    color: rgb(255, 255, 255);
-    z-index: 100;
-    position: fixed;
-    left: 30px;
+    color: #fff;
+
 }
 
 
@@ -142,6 +140,13 @@ body,html{
     flex-direction: column;
     gap: 20px;
     width: 80%;
+}
+
+#close-icon{
+    font-size: 35px;
+    color: #17794B;
+    margin: 20px;
+    cursor: pointer;
 }
 
 .videos{
