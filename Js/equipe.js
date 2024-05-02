@@ -29,8 +29,6 @@ const mudarTemaEscuroEquipe = () => {
     iconSun.style.display = isDarkMode ? 'none' : 'inline';
 
     var body = document.querySelector('.body');
-    var selectionseach = document.querySelector('.selectionseach');
-    selectionseach.classList.toggle('title-dark');
     body.classList.toggle('title-dark');
     body.classList.toggle('dark');
 

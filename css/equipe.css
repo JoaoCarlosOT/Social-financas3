@@ -121,7 +121,7 @@ label[onclick="section()"]{cursor: pointer;}
 .selection5:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection6:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 
-.selection1:has(> #team1:checked){background-color: rgb(29, 140, 243);color: white;}
+.selection1:has(> #team1:checked) {background-color: rgb(29, 140, 243);color: #ffffff;}
 .selection2:has(> #team2:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection3:has(> #team3:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection4:has(> #team4:checked) {background-color: rgb(29, 140, 243);color: white;}
@@ -170,18 +170,22 @@ div[class*=-boxtext]{
 .grid {
     background-color: #5B5B5B;
     margin: 0.5% 0;
+    padding: 0.2em;
     width: 25vw;
     max-width: 33%;
     min-width: 300px;
     max-height: 680px;
     height: 70vh;
-    padding: 0.2em;
     display: flex;
     border-radius: 2%;
     flex-direction: column;
     justify-content: space-between;
     background-size: cover;
     background-position: center;
+}
+.grid:hover{
+    transition: .3s;
+    transform: scale(0.98);
 }
 .nametext{
     color: white;
@@ -251,30 +255,45 @@ footer a {
 .team6-student5{background-image: url(../img/EquipeDeProgramacao/laura.webp);}
 .team6-student6{background-image: url(../img/EquipeDeProgramacao/alvororuan.jpg);}
 
+@media screen and (max-width: 1380px) {
+    .grid {
+        min-width: 350px;
+        width: 26vw;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    .grid {
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .grid {
+        height: 58vh;
+    }
+}
+
+
 @media screen and (max-width: 1080px) {
     .grid {
             width: 33vw;
             height: 50vh;
         }
 }
-@media screen and (max-width: 1380px) {
-    .grid {
-        min-width: 350px;
-        width: 33vw;
-        height: 65vh;
-    }
-}
 
-@media screen and (max-width: 1380px) {
-    .grid {
-        min-width: 350px;
-        width: 33vw;
-        height: 65vh;
-    }  
-}
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 884px) {
     .titleparallax {
         transform: translateX(10vw);
+    }
+    .grid {
+        min-width: 300px;
+        max-height: 450px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .grid {
+        max-height: 400px;
     }
 }
 @media screen and (max-width: 375px) {
@@ -282,10 +301,20 @@ footer a {
         padding: 2.5%;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .element-2 {
+        margin: 0.5% 0;
+        padding: 0.2em;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .element-2 {
-        padding: 2.5%;
+        margin: 1% 2.5%;
+        padding: 0em;
     }
+
     .grid {
         min-width: 300px;
     }
