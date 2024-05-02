@@ -67,7 +67,7 @@ header>nav>a{
 
 #icon-sun{
     display: none;
-    color: rgb(240, 217, 12);
+    color: rgb(240, 156, 12);
     font-size: 20px;
 }
 
@@ -95,7 +95,7 @@ main:after{
 
 article{
     width: 100%;
-    height: 500px;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -120,6 +120,7 @@ article>h1>p{
     width: 600px;
     font-weight: 400;
     font-size: 0.7em;
+    text-align: justify;
 }
 
 .title-box{
@@ -421,6 +422,11 @@ footer>div>nav{
         height: 800px;
         flex-wrap: wrap;
     }
+
+    article>h1>p {
+        text-align: justify;
+    }
+
     article>img{
         width: 470px;
     }
@@ -584,5 +590,5 @@ footer>div>nav{
 
     .button {
         margin: 0 0 0 20px;
-    }
+    } 
 }

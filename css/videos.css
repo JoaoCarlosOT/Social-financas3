@@ -10,24 +10,28 @@ body,html{
 
 /*Header*/
 
-.div-section-1>p{
+.tit-paralax{
     padding: calc(10% + 80px);
     font-size: 2.7em;
     font-weight: 500px;
     color: rgb(255, 255, 255);
+    z-index: 100;
+    position: fixed;
+    left: 30px;
 }
 
-.parallax-image{
+
+/* .parallax-image{
     background-image: url(../img/contabilidade.jpg
     );
-    /*filter: brightness(50%);*/ 
+    filter: brightness(50%); 
     width: 100%;
     height: 600px;
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
     
-}
+} */
 
 /*fim Header*/
 
@@ -44,6 +48,7 @@ body,html{
 }
 
 .nav-videos>p{
+    text-align: justify;
     font-size: 23px;
     color: white;
     width: 70%;
@@ -125,7 +130,7 @@ body,html{
 
 .div-all-videos{
     padding: 30px 0px 0px 0px;
-    width: 1000px;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,11 +141,12 @@ body,html{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
 }
 
 .videos{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .h2-contabilidade-videos{
@@ -168,6 +174,9 @@ body,html{
 } 
 
 @media (max-width: 1100px) and (min-width: 1024px){
+    .videos {
+         height: 50vh; 
+    }
 } 
 
 @media (max-width: 1024px) and (min-width: 800px){
@@ -177,6 +186,9 @@ body,html{
         font-size: 2.7em;
     }
     
+    .videos {
+        height: 37vh; 
+   }
 
     .videos-contabilidade{
        width: 90%;
@@ -203,6 +215,10 @@ body,html{
        width: 93%;
     }
 
+    .videos {
+        height: 34vh; 
+   }
+
     .h2-contabilidade-videos{
       font-size: 1.7em;
     }
@@ -222,7 +238,12 @@ body,html{
 
     .videos-contabilidade{
         width: 92%;
+        
     }
+
+    .videos {
+        height: 27vh; 
+   }
 
 }
 
@@ -237,6 +258,10 @@ body,html{
         width: 92%;
     }
 
+    .videos {
+        height: 20vh; 
+   }
+
     .h2-contabilidade-videos{
         font-size: 1.5em;
       }
@@ -247,7 +272,9 @@ body,html{
 }
 
 @media screen and (max-width: 320px) { 
-
+    .videos {
+        height: 7vh; 
+   }
 }
 
 
