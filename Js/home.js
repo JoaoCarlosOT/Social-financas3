@@ -19,6 +19,7 @@ const fecharMenu = () => {
 };
 
 const mudarTemaEscuro = () => {
+
     var detailsList = document.querySelectorAll(".details");
 
     detailsList.forEach((detail) => {
@@ -64,7 +65,15 @@ const mudarTemaEscuro = () => {
     iconMoon.style.display = isDarkMode ? 'none' : 'inline';
     iconSun.style.display = isDarkMode ? 'inline' : 'none';
     
-    
+    var cardshome = document.querySelectorAll('.containers');
+    var textcards = document.querySelectorAll('.textcards');
+    cardshome.forEach((detail) => {
+        detail.classList.toggle('containersdark');
+        detail.classList.toggle('whitecc');
+    });
+    textcards.forEach((detail) => {
+        detail.classList.toggle('whitecc');
+    });
 };
 
 document.getElementById("toggle-navbar").addEventListener("click", mudarTemaEscuro);

@@ -158,7 +158,6 @@ color: #fff
     justify-content: space-between;
     border-radius: 6px;
 }
-
 .containers::after{
     content: "";
     width: 100%;
@@ -188,7 +187,7 @@ position: absolute;
 font-size: 35px;
 }
 
-.containers h1{
+.h1textcard{
 position: absolute;
 top: 50%;
 z-index: 2;
@@ -203,7 +202,7 @@ margin: 13px;
     font-weight: 400;
 }
 
-.containers:hover h1{
+.containers:hover .h1textcard{
     color: white;
   transition:.6s ;
 }
@@ -600,4 +599,17 @@ footer>div>nav{
     .button {
         margin: 0 0 0 20px;
     } 
+}
+
+.containersdark {
+    background-color: #514C4C;
+}
+
+.whitecc {
+    color: white;
+}
+.containersdark:hover>.whitecc,
+.containersdark:hover>.h1textcard>.whitecc,
+.containersdark:hover>i{
+    color: #17794B;
 }
