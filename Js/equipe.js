@@ -54,6 +54,7 @@ const section = () => {
     var team4 = document.querySelector('.team4');
     var team5 = document.querySelector('.team5');
     var team6 = document.querySelector('.team6');
+    var team7 = document.querySelector('.team7');
     setTimeout(() => {
         var sections = document.querySelectorAll('.selectionboxs');
         sections.forEach(section => {
@@ -97,6 +98,13 @@ const section = () => {
                     team6.style.display = "flex";
                 }else{
                     team6.style.display = "none";
+                }
+            }
+            if(section.value == 7){
+                if(section.checked){
+                    team7.style.display = "flex";
+                }else{
+                    team7.style.display = "none";
                 }
             }
         });

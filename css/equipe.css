@@ -120,6 +120,7 @@ label[onclick="section()"]{cursor: pointer;}
 .selection4:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection5:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 .selection6:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
+.selection7:hover{transition: .2s;background-color: rgb(21, 114, 201);color: white;}
 
 .selection1:has(> #team1:checked) {background-color: rgb(29, 140, 243);color: #ffffff;}
 .selection2:has(> #team2:checked) {background-color: rgb(29, 140, 243);color: white;}
@@ -127,8 +128,9 @@ label[onclick="section()"]{cursor: pointer;}
 .selection4:has(> #team4:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection5:has(> #team5:checked) {background-color: rgb(29, 140, 243);color: white;}
 .selection6:has(> #team6:checked) {background-color: rgb(29, 140, 243);color: white;}
+.selection7:has(> #team7:checked) {background-color: rgb(29, 140, 243);color: white;}
 
-.team1, .team2, .team3, .team4, .team5, .team6{
+.team1, .team2, .team3, .team4, .team5, .team6, .team7{
     margin-bottom: 15px;
     flex-direction: column;
     justify-content: center;
@@ -252,8 +254,11 @@ footer a {
 .team6-student2{background-image: url(../img/EquipeDeProgramacao/escobarly.jpg);}
 .team6-student3{background-image: url(../img/EquipeDeProgramacao/samyla.jpg);}
 .team6-student4{background-image: url(../img/EquipeDeProgramacao/vinicius.jpg);}
-.team6-student5{background-image: url(../img/EquipeDeProgramacao/laura.webp);}
+.team6-student5{background-image: url(../img/EquipeDeProgramacao/laura.jpg);}
 .team6-student6{background-image: url(../img/EquipeDeProgramacao/alvororuan.jpg);}
+
+.team7-student1{background-image: url(../img/EquipeDosProfessores/1.jpg);}
+.team7-student2{background-image: url(../img/EquipeDosProfessores/2.jpg);}
 
 @media screen and (max-width: 1380px) {
     .grid {
@@ -318,4 +323,8 @@ footer a {
     .grid {
         min-width: 300px;
     }
+}
+
+.efxcard{
+    
 }
