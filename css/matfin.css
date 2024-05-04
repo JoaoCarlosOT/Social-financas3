@@ -4,12 +4,14 @@
     height: 600px;
     background-repeat: no-repeat;
     background-size:cover;
-    background-attachment: fixed;
     
 }
 
 @media (max-width:520px) and (min-width:310px) {
     .parallax-image {
         height: 30vh;
+    }
+    .tit-paralax {
+        display: none;
     }
 }
