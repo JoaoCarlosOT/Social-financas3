@@ -47,7 +47,7 @@ body,html{
 
 .nav-videos>p{
     text-align: justify;
-    font-size: 23px;
+    font-size: 0.9em;
     color: white;
     width: 70%;
 }
@@ -161,6 +161,7 @@ body,html{
 .p-video-contabilidade{
     color: #000;
     padding-bottom: 50px;
+    text-align: justify;
 }
 
 
