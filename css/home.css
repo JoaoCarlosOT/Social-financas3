@@ -78,7 +78,7 @@ main{
     /* filter: brightness(50%); */
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:top center;
     position: relative;
     display: flex;
     align-items: center;
@@ -525,6 +525,24 @@ footer>div>nav{
     }
     article{
         height: 900px;
+    }
+}
+
+@media (max-width:650px) and (min-width:520px){
+    main{
+        height: 450px;
+    }
+    main:after{
+        height: 450px;
+    }
+}
+
+@media (max-width:520px) and (min-width:300px){
+    main{
+        height: 300px;
+    }
+    main:after{
+        height: 300px;
     }
 }
 
